@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='css/style.css') }}">
 </head>
 <body>
+    <h1>The IASA Market</h1>
+    <h2>Buy Amazing stuff in my market!</h3>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://images.ctfassets.net/u4vv676b8z52/1GphKOdCaUfnGuFvrsKnqN/849de3924b8938b53e704f7ea318124d/child-tears-678x446.gif?fm=jpg&q=80">
+            <h3>Tears of Y1 Students</h3>  
+            <p>They were told there is a pool In IASA....</p>
+            <button><a>Unavliable! (Y3 bought them all)</a></button> 
+        </div> 
+
+        <div class="product">
+            <img src="data:image/jpeg;base64,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">  
+            <h3>Rubber Duck</h3>
+            <p>Not somthing you buy, ITS SOMTHING YOU EARN</p>
+            <button><a>Unavliable!</a></button> 
+        </div>
+
+
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYIZ5PzNx7qZtJULV3thwtfDF8IHj_SSpwbrx39OCx&s">
+            <h3>Name tag</h3>  
+            <p> One of a kind! a must have in IASA!</p>
+            <button><a href="/nametag">Click to view!</a></button> 
+        </div>
+
+
+        <div class="product">
+            <img src="https://www.rottler.com/wp-content/uploads/house-spider-min.jpg">
+            <h3>The Spider in my room</h3>  
+            <p>Please help me</p>
+            <button><a>Unavliable!</a></button> 
+        </div>   
+    </div>
 
 </body>
 </html>

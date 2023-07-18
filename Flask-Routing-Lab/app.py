@@ -1,6 +1,5 @@
 from flask import Flask, redirect, request, render_template, url_for
 
-
 app = Flask(  # Create a flask app
     __name__,
     template_folder='templates',  # Name of html file folder
@@ -9,10 +8,21 @@ app = Flask(  # Create a flask app
 
 # Your code should be below
 
+@app.route('/')
+def home():
+    return render_template("home.html")
 
+@app.route('/nametag')
+def nametag():
+    return render_template("product.html")
 
-
+@app.route('/cart')
+def cartPage():
+    return render_template("cart.html")
 # Your code should be above
 
 if __name__ == "__main__":  # Makes sure this is the main process
     app.run(debug=True)
+
+
+
